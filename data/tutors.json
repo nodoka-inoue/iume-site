@@ -1,0 +1,32 @@
+[
+  {
+    "nickname": "まんよう",
+    "faculty": "",
+    "school": "開成中学校・高等学校",
+    "cramSchool": "",
+    "subjects": "数学・国語・算数・理科",
+    "consultation": "",
+    "teachingStyle": "",
+    "introduction": ""
+  },
+  {
+    "nickname": "うめ",
+    "faculty": "",
+    "school": "開成中学校・高等学校",
+    "cramSchool": "",
+    "subjects": "数学・物理・化学・英語",
+    "consultation": "",
+    "teachingStyle": "",
+    "introduction": ""
+  },
+  {
+    "nickname": "よう",
+    "faculty": "東京大学 理科二類",
+    "school": "栄光学園中学校・高等学校",
+    "cramSchool": "日能研・鉄緑会",
+    "subjects": "",
+    "consultation": "",
+    "teachingStyle": "",
+    "introduction": ""
+  }
+]
