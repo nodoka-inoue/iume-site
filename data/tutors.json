@@ -1,32 +1,32 @@
 [
   {
     "nickname": "まんよう",
-    "faculty": "",
+    "faculty": "東京大学　理学部",
     "school": "開成中学校・高等学校",
-    "cramSchool": "",
+    "cramSchool": "早稲田アカデミー→鉄緑会",
     "subjects": "数学・国語・算数・理科",
-    "consultation": "",
-    "teachingStyle": "",
-    "introduction": ""
+    "consultation": "理系科目にとどまらず、文系科目も幅広く対応可能です。幅広い成績の生徒さんに対応可能です！",
+    "teachingStyle": "どんなレベルの生徒さんでも、一人一人に合わせて指導します",
+    "introduction": "塾講師や家庭教師の経験が豊富で、指導実績も多数あります。また、私自身中高時代に成績が低迷した経験があり、生徒さんの「わからない！」という疑問に丁寧に寄り添った指導が可能です！"
   },
   {
     "nickname": "うめ",
-    "faculty": "",
+    "faculty": "東京大学　理学部",
     "school": "開成中学校・高等学校",
-    "cramSchool": "",
+    "cramSchool": "SAPIX→鉄緑会",
     "subjects": "数学・物理・化学・英語",
-    "consultation": "",
-    "teachingStyle": "",
-    "introduction": ""
+    "consultation": "帰国子女にも指導可能です",
+    "teachingStyle": "理系科目を、論理的に、本質的なところまで教えられます！",
+    "introduction": "東京大学理科三類越えの点数を本番で獲得しました。英語がネイティブレベルで読み書きすることができるので、高いレベルで指導可能です！"
   },
   {
     "nickname": "よう",
-    "faculty": "東京大学 理科二類",
+    "faculty": "東京大学　理学部",
     "school": "栄光学園中学校・高等学校",
-    "cramSchool": "日能研・鉄緑会",
+    "cramSchool": "日能研→鉄緑会",
     "subjects": "英語、数学、物理、化学、現国、倫理政治経済",
     "consultation": "勉強法など",
-    "teachingStyle": "個別の問題の指導に留まらないために一般化して教えるようにしています",
+    "teachingStyle": "個別の問題の指導に留まらないために一般化して教えるようにしています！",
     "introduction": "家庭教師なしで自主学習を進められることをゴールとして指導します。よろしくお願いします！"
   }
 ]
