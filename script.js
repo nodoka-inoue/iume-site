@@ -73,13 +73,15 @@ const renderTutors = (tutors) => {
     }).join('');
     const introduction = tutor.introduction?.trim();
 
-    return `<article class="tutor-card reveal visible">
-      <div class="avatar avatar-${(index % 3) + 1}">${escapeHtml(nickname.charAt(0))}</div>
+    return `<div class="tutor-card-wrap"><article class="tutor-card reveal visible">
+      <div class="avatar avatar-${(index % 3) + 1}" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false"><circle cx="24" cy="12" r="8.5"></circle><path d="M8 44v-5c0-11.8 5.7-18 16-18s16 6.2 16 18v5H8z"></path></svg>
+      </div>
       <div><p class="tutor-label">現役東大生講師</p><h3>${escapeHtml(nickname)}先生</h3>
         <dl class="profile-list">${fields}</dl>
         <p class="profile-intro"><b>紹介文</b><span${introduction ? '' : ' class="pending"'}>${escapeHtml(introduction || '現在準備中です')}</span></p>
       </div>
-    </article>`;
+    </article><span class="tutor-paperclip" aria-hidden="true"></span></div>`;
   }).join('');
 };
 
