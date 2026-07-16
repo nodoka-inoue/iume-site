@@ -112,3 +112,48 @@
 .pricing .plan-label{min-width:152px;padding:6px 24px;text-align:center}
 .pricing .price-card{min-height:650px}.plan-features{order:3;width:100%;margin:0 0 24px;padding:0;list-style:none;text-align:left}.plan-features li{position:relative;padding:7px 0 7px 29px;color:var(--muted);font-size:.88rem;line-height:1.65}.plan-features li:before{content:"✓";position:absolute;top:7px;left:2px;color:var(--gold);font-size:1rem;font-weight:800}.plan-features strong{color:var(--deep);font-weight:700}.pricing .plan-recommendation{order:4;width:100%;min-height:4.8em;margin:0 0 24px!important;padding:14px 15px;border-radius:12px;background:var(--blue);color:var(--navy)!important;font-size:.82rem!important;font-weight:700;line-height:1.7!important;text-align:left}.pricing .price{order:5;margin-top:auto;margin-bottom:0}.pricing .price-card>p:last-of-type{min-height:0}.pricing .price-card h3{min-height:3.1em}
 @media(max-width:680px){.pricing .price-card,.pricing .price-card:last-child{min-height:0}.plan-features{margin-bottom:20px}.plan-features li{padding-top:8px;padding-bottom:8px;font-size:.92rem}.plan-features li:before{top:8px}.pricing .plan-recommendation{min-height:0;margin-bottom:20px!important;font-size:.86rem!important}.pricing .price{margin-top:0}}
+
+/* Hero: reveal the main message from left to right on first view */
+.js .hero-copy h1>span{opacity:0}
+.js .hero-copy h1>span{animation:hero-title-reveal .9s cubic-bezier(.22,1,.36,1) both}
+.js .hero-copy h1>span:nth-child(2){animation-delay:.12s}
+.js .hero-copy h1>span:nth-child(3){animation-delay:.24s}
+@keyframes hero-title-reveal{
+  from{opacity:0;transform:translateX(-38px);filter:blur(4px);-webkit-mask-position:100% 0;mask-position:100% 0}
+  to{opacity:1;transform:translateX(0);filter:blur(0);-webkit-mask-position:0 0;mask-position:0 0}
+}
+.hero-copy h1>span{-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 58%,transparent 100%);mask-image:linear-gradient(90deg,#000 0%,#000 58%,transparent 100%);-webkit-mask-size:240% 100%;mask-size:240% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+@media(prefers-reduced-motion:reduce){.js .hero-copy h1>span{opacity:1;animation:none;-webkit-mask-image:none;mask-image:none;filter:none;transform:none}}
+
+/* Keep the desktop headline inside the copy area, clear of the hero photo. */
+@media(min-width:1101px){
+  .hero-copy{width:51%;padding-right:28px}
+  .hero h1{font-size:clamp(3rem,4vw,3.55rem)}
+  .hero-photo-wrap{width:calc(57% + (100vw - 100%)/2)}
+  .hero-photo-wrap .hero-education-image{-webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.08) 8%,rgba(0,0,0,.55) 18%,#000 28%,#000 100%);mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.08) 8%,rgba(0,0,0,.55) 18%,#000 28%,#000 100%)}
+}
+
+/* Hero actions: gently appear one after another after the headline. */
+.js .hero-copy .hero-actions .button{opacity:0}
+.js .hero-copy .hero-actions .button{animation:hero-action-reveal .65s cubic-bezier(.22,1,.36,1) both}
+.js .hero-copy .hero-actions .button:first-child{animation-delay:.48s}
+.js .hero-copy .hero-actions .button:nth-child(2){animation-delay:.64s}
+@keyframes hero-action-reveal{
+  from{opacity:0;transform:translateY(14px);filter:blur(2px)}
+  to{opacity:1;transform:translateY(0);filter:blur(0)}
+}
+@media(prefers-reduced-motion:reduce){.js .hero-copy .hero-actions .button{opacity:1;animation:none;filter:none;transform:none}}
+
+/* On mobile .hero-copy uses display:contents, so start its animation without
+   relying on IntersectionObserver detecting a wrapper box. */
+@media(max-width:680px){
+  .js .hero-copy h1>span{animation:hero-title-reveal .9s cubic-bezier(.22,1,.36,1) both}
+  .js .hero-copy h1>span:nth-child(2){animation-delay:.12s}
+  .js .hero-copy h1>span:nth-child(3){animation-delay:.24s}
+  .js .hero-copy .hero-actions .button{animation:hero-action-reveal .65s cubic-bezier(.22,1,.36,1) both}
+  .js .hero-copy .hero-actions .button:first-child{animation-delay:.48s}
+  .js .hero-copy .hero-actions .button:nth-child(2){animation-delay:.64s}
+}
+@media(max-width:680px) and (prefers-reduced-motion:reduce){
+  .js .hero-copy h1>span,.js .hero-copy .hero-actions .button{opacity:1;animation:none;-webkit-mask-image:none;mask-image:none;filter:none;transform:none}
+}
