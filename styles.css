@@ -157,3 +157,21 @@
 @media(max-width:680px) and (prefers-reduced-motion:reduce){
   .js .hero-copy h1>span,.js .hero-copy .hero-actions .button{opacity:1;animation:none;-webkit-mask-image:none;mask-image:none;filter:none;transform:none}
 }
+
+.reason-showcase-visual img{width:130px;height:130px;object-fit:contain}
+@media(max-width:680px){.reason-showcase-visual img{width:58px;height:58px}}
+
+/* Pricing cards: swipe horizontally on phones. */
+@media(max-width:680px){
+  .pricing .price-grid{display:flex;width:calc(100% + 36px);margin-top:-10px;margin-right:-18px;margin-left:-18px;padding:32px 18px 22px;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:18px;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain}
+  .pricing .price-grid::-webkit-scrollbar{display:none}
+  .pricing .price-grid{scrollbar-width:none}
+  .pricing .price-card,.pricing .price-card:last-child{flex:0 0 86%;width:86%;max-width:360px;padding:31px 22px 19px;scroll-snap-align:start;scroll-snap-stop:always}
+  .pricing .plan-label{margin-bottom:11px}
+  .pricing .price-card h3{margin-bottom:10px}
+  .pricing .plan-features{margin-bottom:14px}
+  .pricing .plan-features li{padding-top:4px;padding-bottom:4px;line-height:1.55}
+  .pricing .plan-features li:before{top:4px}
+  .pricing .plan-recommendation{margin-bottom:14px!important;padding:10px 13px;line-height:1.55!important}
+  .pricing .price{padding:12px 0 15px}
+}
