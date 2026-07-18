@@ -122,6 +122,32 @@
   from{opacity:0;transform:translateX(-38px);filter:blur(4px);-webkit-mask-position:100% 0;mask-position:100% 0}
   to{opacity:1;transform:translateX(0);filter:blur(0);-webkit-mask-position:0 0;mask-position:0 0}
 }
+
+/* The three published tutors are also IUMe's operating members. */
+.tutor-section-lead{max-width:850px;line-height:2}
+.tutor-role-badge{display:inline-block;margin-bottom:8px;padding:5px 11px;border:1px solid rgba(216,161,29,.42);border-radius:999px;background:var(--cream);color:var(--gold);font-size:.68rem;line-height:1.5;letter-spacing:.04em}
+
+/* Re-introduction support belongs to the pricing section. */
+.rematch-box{display:grid;grid-template-columns:150px minmax(0,1fr);gap:36px;align-items:center;margin-top:42px;padding:38px 44px;border:1px solid rgba(10,45,95,.18);border-radius:26px;background:var(--white);box-shadow:0 14px 38px rgba(6,27,58,.07)}
+.rematch-icon{display:grid;place-items:center;width:128px;height:128px;border-radius:50%;background:var(--white)}
+.rematch-icon svg{width:92px;height:92px;fill:none;stroke:var(--navy);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.rematch-icon .rematch-accent{fill:var(--gold-light);stroke:var(--gold);stroke-width:2.6}
+.rematch-box h2{margin:0 0 14px;text-align:left;font-family:"Noto Sans JP",sans-serif;font-size:clamp(1.45rem,2.5vw,2rem)}
+.rematch-box p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.9}
+.rematch-box strong{position:relative;color:var(--gold);font-size:1.06em;white-space:nowrap}
+.rematch-box strong:after{content:"";position:absolute;z-index:-1;right:0;bottom:0;left:0;height:7px;border-radius:7px;background:var(--gold-light)}
+.rematch-note{margin-top:10px!important;color:var(--navy)!important;font-size:.82rem!important;font-weight:700}
+
+@media(max-width:680px){
+  .tutor-section-lead{max-width:36em;margin-bottom:34px;font-size:.86rem;line-height:1.85;text-align:left}
+  .tutor-role-badge{font-size:.64rem}
+  .rematch-box{grid-template-columns:1fr;gap:16px;margin-top:32px;padding:28px 22px;text-align:center}
+  .rematch-icon{width:98px;height:98px;margin:auto}
+  .rematch-icon svg{width:72px;height:72px}
+  .rematch-box h2{text-align:center;font-size:1.35rem;line-height:1.55}
+  .rematch-box p{font-size:.86rem;line-height:1.8;text-align:left}
+  .rematch-note{text-align:center!important;font-size:.78rem!important}
+}
 .hero-copy h1>span{-webkit-mask-image:linear-gradient(90deg,#000 0%,#000 58%,transparent 100%);mask-image:linear-gradient(90deg,#000 0%,#000 58%,transparent 100%);-webkit-mask-size:240% 100%;mask-size:240% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
 @media(prefers-reduced-motion:reduce){.js .hero-copy h1>span{opacity:1;animation:none;-webkit-mask-image:none;mask-image:none;filter:none;transform:none}}
 
@@ -374,3 +400,313 @@
   .concern-closing>span{display:block}
   .concern-closing-line{white-space:nowrap}
 }
+
+.footer-logo{display:block;width:150px}
+.footer-logo img{width:100%;filter:brightness(0) invert(1);opacity:.95}
+@media(max-width:680px){.footer-logo{width:150px}}
+
+/* Restrained, text-first introduction. */
+.about-iume{padding:68px 24px;background:var(--white)}
+.about-iume{overflow:hidden}
+.about-iume-inner{position:relative;max-width:1100px}
+.about-iume-backdrop{position:absolute;z-index:0;top:-42px;left:-78px;color:rgba(10,45,95,.045);font-family:Arial,sans-serif;font-size:clamp(8rem,17vw,14rem);font-weight:800;line-height:.9;letter-spacing:-.07em;white-space:nowrap;pointer-events:none;user-select:none}
+.about-iume-inner>.section-kicker,.about-iume-inner>h2,.about-iume-inner>.about-iume-lead,.about-iume-inner>.about-iume-copy,.about-iume-inner>.about-iume-points{position:relative;z-index:1}
+.about-iume .section-kicker{display:flex;align-items:center;gap:18px;margin-bottom:24px;color:var(--gold);font-family:"Noto Serif JP",serif;font-size:.82rem;font-weight:700;letter-spacing:.2em;text-align:left}
+.about-iume .section-kicker:before{content:"";display:block;width:74px;height:1px;background:var(--gold)}
+.about-iume h2{margin-bottom:38px;color:var(--navy);font-size:clamp(3.2rem,6vw,5rem);line-height:1.15;text-align:left}
+.about-iume .section-kicker{animation:about-heading-in .75s cubic-bezier(.22,1,.36,1) .08s both}
+@keyframes about-heading-in{from{opacity:0;transform:translateX(-42px)}to{opacity:1;transform:translateX(0)}}
+.about-iume h2:after{content:"";display:block;width:52px;height:2px;margin-top:18px;background:var(--gold)}
+.about-iume h2,.about-iume-lead,.about-iume-copy,.about-iume-points{margin-left:84px}
+.about-iume-lead{margin:0 0 14px;color:var(--navy);font-size:1.28rem;font-weight:700;text-align:left}
+.about-iume-lead-underline{position:relative;z-index:0;white-space:nowrap}
+.about-iume-lead-underline:after{content:"";position:absolute;z-index:-1;right:-2px;bottom:0;left:-2px;height:9px;border-radius:9px;background:rgba(244,216,137,.72)}
+.about-iume-lead{margin-left:84px}
+.about-iume-copy{max-width:850px;margin:0;color:var(--muted);font-size:.92rem;line-height:1.85;text-align:left}
+.about-iume-copy{margin-left:84px}
+.about-iume-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:34px 0 0 84px;padding:0;list-style:none}
+.about-iume-points li{position:relative;min-width:0;min-height:150px;padding:42px 32px 2px;text-align:left}
+.about-iume-points li:first-child{padding-left:0}
+.about-iume-points li+li{border-left:1px solid var(--line)}
+.about-iume-points span{position:absolute;z-index:0;top:-15px;left:32px;color:rgba(216,161,29,.14);font-family:"Noto Serif JP",serif;font-size:5.2rem;font-weight:700;line-height:1;letter-spacing:-.04em;pointer-events:none}
+.about-iume-points li:first-child span{left:0}
+.about-iume-points li>div{position:relative;z-index:1}
+.about-iume-points h3{margin:0 0 8px;color:var(--navy);font-size:1.15rem;line-height:1.55}
+.about-iume-points p{margin:0;color:var(--muted);font-size:.8rem;line-height:1.75}
+@media(max-width:760px){.about-iume{padding:52px 18px}.about-iume-backdrop{top:-5px;left:-18px;font-size:6.2rem;letter-spacing:-.08em}.about-iume .section-kicker{gap:12px;margin-bottom:18px;font-size:.7rem}.about-iume .section-kicker:before{width:42px}.about-iume h2,.about-iume-lead,.about-iume-copy,.about-iume-points{margin-left:22px}.about-iume h2{margin-bottom:28px;font-size:2.75rem}.about-iume h2:after{width:40px;margin-top:13px}.about-iume-lead{font-size:1.08rem;line-height:1.7}.about-iume-copy{font-size:.84rem;line-height:1.75}.about-iume-points{grid-template-columns:1fr;margin-top:26px}.about-iume-points li,.about-iume-points li:first-child{min-height:122px;padding:40px 0 18px}.about-iume-points li+li{border-top:1px solid var(--line);border-left:0}.about-iume-points span,.about-iume-points li:first-child span{top:7px;left:0;font-size:4rem}.about-iume-points h3{margin-bottom:5px;font-size:1.05rem}.about-iume-points p{font-size:.8rem}}
+
+/* Concerns layout inspired by the supplied editorial reference. */
+.concerns{background:linear-gradient(180deg,#fff 0%,#fffdfa 100%)}
+.concerns .section-kicker{font-family:"Noto Serif JP",serif;font-size:1.35rem;letter-spacing:.04em}
+.concerns .section-kicker:after{content:"";display:block;width:64px;height:2px;margin:10px auto 0;background:var(--gold)}
+.concern-showcase{gap:22px;margin-top:46px}
+.concern-showcase-card{position:relative;min-height:360px;padding:34px 28px 30px;border:1px solid rgba(216,161,29,.24);border-radius:18px;background:var(--white);box-shadow:0 14px 36px rgba(6,27,58,.06);text-align:center}
+.concern-number{position:absolute;top:22px;left:22px;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--navy);color:var(--gold-light);font-family:"Noto Serif JP",serif;font-size:1.15rem;box-shadow:0 7px 16px rgba(6,27,58,.15)}
+.concern-card-icon{display:grid;place-items:center;width:92px;height:92px;margin:5px auto 18px}
+.concern-card-icon svg{width:76px;height:76px;fill:none;stroke:var(--navy);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.concern-card-icon .accent{fill:var(--cream);stroke:var(--gold)}
+.concern-showcase-card h3{min-height:3.1em;margin:0 0 18px;padding-bottom:18px;border-bottom:1px dashed rgba(10,45,95,.2);font-size:1.12rem}
+.concern-showcase-card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.9;text-align:left}
+@media(max-width:680px){.concerns .section-kicker{font-size:1.05rem}.concern-showcase{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:28px}.concern-showcase-card{min-height:250px;padding:16px 7px 14px;border-radius:11px}.concern-number{top:9px;left:8px;width:30px;height:30px;font-size:.72rem}.concern-card-icon{width:48px;height:48px;margin:16px auto 9px}.concern-card-icon svg{width:44px;height:44px}.concern-showcase-card h3{min-height:4.2em;margin-bottom:9px;padding-bottom:9px;font-size:.7rem;line-height:1.45}.concern-showcase-card p{font-size:.61rem;line-height:1.6}.concern-closing{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){.about-iume .section-kicker,.about-iume h2{animation:none}}
+
+/* Unified labels for every main content section. */
+.section .section-kicker{display:block;position:static;width:auto;margin:0 0 18px;transform:none;color:var(--gold);font-family:"Noto Serif JP",serif;font-size:1.35rem;font-weight:700;line-height:1.5;letter-spacing:.04em;text-align:center;white-space:normal}
+.section .section-kicker:before{display:none}
+.section .section-kicker:after{content:"";display:block;width:64px;height:2px;margin:10px auto 0;background:var(--gold)}
+@media(max-width:680px){.section .section-kicker{font-size:1.05rem}.section .section-kicker:after{width:52px;margin-top:8px}}
+
+/* Concerns only: speech panels with the existing line icons below. */
+.concern-showcase-card{display:flex;flex-direction:column;align-items:center;min-height:0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+.concern-speech{position:relative;display:flex;flex-direction:column;justify-content:center;width:100%;min-height:190px;padding:30px 28px 34px;border:1.5px solid rgba(10,45,95,.55);border-radius:16px;background:var(--white);text-align:center}
+.concern-speech:before,.concern-speech:after{content:"";position:absolute;left:50%;width:0;height:0;transform:translateX(-50%)}
+.concern-speech:before{bottom:-25px;border-top:25px solid rgba(10,45,95,.55);border-right:19px solid transparent;border-left:19px solid transparent}
+.concern-speech:after{bottom:-22px;border-top:23px solid var(--white);border-right:17px solid transparent;border-left:17px solid transparent}
+.concern-speech-number{position:absolute;top:14px;left:18px;color:var(--gold);font-family:"Noto Serif JP",serif;font-size:.82rem;font-weight:700;letter-spacing:.04em}
+.concern-showcase-card .concern-card-icon{order:2;width:108px;height:108px;margin:34px auto 0;color:var(--navy)}
+.concern-showcase-card .concern-card-icon svg{width:88px;height:88px}
+.concern-showcase-card .concern-speech h3{min-height:0;margin:0 0 10px;padding:0;border:0;font-size:1.08rem;line-height:1.55}
+.concern-showcase-card .concern-speech p{margin:0;color:var(--muted);font-size:.86rem;line-height:1.75;text-align:center}
+@media(max-width:680px){.concern-speech{min-height:142px;padding:25px 8px 18px;border-width:1px;border-radius:10px}.concern-speech:before{bottom:-17px;border-top-width:17px;border-right-width:11px;border-left-width:11px}.concern-speech:after{bottom:-15px;border-top-width:16px;border-right-width:10px;border-left-width:10px}.concern-speech-number{top:6px;left:8px;font-size:.62rem}.concern-showcase-card .concern-card-icon{width:58px;height:58px;margin-top:22px}.concern-showcase-card .concern-card-icon svg{width:52px;height:52px}.concern-showcase-card .concern-speech h3{min-height:3em;margin-bottom:6px;font-size:.7rem}.concern-showcase-card .concern-speech p{font-size:.61rem;line-height:1.55}}
+
+/* Refined concern bubbles and a quiet navy illustration band. */
+.concerns{overflow:hidden}
+.concern-showcase{position:relative;max-width:940px;margin-right:auto;margin-left:auto}
+.concern-showcase:after{content:"";position:absolute;z-index:0;right:50%;bottom:0;width:100vw;height:82px;transform:translateX(50%);background:rgba(10,45,95,.08)}
+.concern-showcase-card{position:relative;z-index:1}
+.concern-speech{min-height:158px;padding:25px 24px 29px;border:2px solid var(--gold)}
+.concern-speech:before{bottom:-24px;border-top-color:var(--gold)}
+.concern-showcase-card .concern-card-icon{position:relative;z-index:1;width:96px;height:96px;margin-top:30px}
+.concern-showcase-card .concern-card-icon svg{width:78px;height:78px}
+@media(max-width:680px){.concern-showcase:after{height:48px}.concern-speech{min-height:124px;padding:22px 6px 14px;border-width:1.5px}.concern-speech:before{bottom:-17px;border-top-color:var(--gold)}.concern-showcase-card .concern-card-icon{width:52px;height:52px;margin-top:21px}.concern-showcase-card .concern-card-icon svg{width:46px;height:46px}}
+
+/* Concerns: editorial three-column issue layout. */
+.concern-showcase{max-width:1040px;gap:0;margin-top:48px}
+.concern-showcase:after{display:none}
+.concern-showcase-card{display:block;min-height:390px;padding:0 38px 24px;text-align:left}
+.concern-showcase-card+.concern-showcase-card{border-left:1px solid rgba(10,45,95,.3)}
+.concern-issue-label{display:flex;align-items:center;margin-bottom:18px}
+.concern-issue-label span,.concern-issue-label b{display:grid;place-items:center;width:60px;height:60px;border-radius:50%;color:var(--white);font-size:.75rem;line-height:1}
+.concern-issue-label span{background:var(--navy)}
+.concern-issue-label b{margin-left:-8px;background:var(--gold);font-family:"Noto Serif JP",serif;font-size:1.15rem;font-weight:700}
+.concern-showcase-card .concern-card-icon{width:150px;height:150px;margin:0 auto 22px}
+.concern-showcase-card .concern-card-icon svg{width:128px;height:128px;stroke-width:1.65}
+.concern-showcase-card>h3{min-height:3.2em;margin:0 0 16px;padding:0 0 16px;border-bottom:1px solid var(--line);font-size:1.08rem;line-height:1.6;text-align:left}
+.concern-showcase-card>p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.85;text-align:left}
+@media(max-width:680px){.concern-showcase{grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px}.concern-showcase-card{min-height:255px;padding:0 8px 12px}.concern-showcase-card+.concern-showcase-card{border-left-color:rgba(10,45,95,.25)}.concern-issue-label{margin-bottom:7px}.concern-issue-label span,.concern-issue-label b{width:32px;height:32px;font-size:.48rem}.concern-issue-label b{margin-left:-5px;font-size:.7rem}.concern-showcase-card .concern-card-icon{width:68px;height:68px;margin-bottom:8px}.concern-showcase-card .concern-card-icon svg{width:60px;height:60px}.concern-showcase-card>h3{min-height:4.4em;margin-bottom:8px;padding-bottom:8px;font-size:.68rem;line-height:1.45}.concern-showcase-card>p{font-size:.59rem;line-height:1.55}}
+
+/* Final concern treatment: quiet numbers, circular icons, and a summary panel. */
+.concern-showcase-card{min-height:360px;padding-top:2px}
+.concern-issue-label{display:block;margin-bottom:-28px}
+.concern-issue-label span{display:none}
+.concern-issue-label b{display:block;width:auto;height:auto;margin:0;color:var(--gold);background:transparent;font-family:"Noto Serif JP",serif;font-size:1.75rem;line-height:1;font-weight:700}
+.concern-issue-label b:after{content:"";display:block;width:34px;height:1px;margin-top:10px;background:var(--gold)}
+.concern-showcase-card .concern-card-icon{display:grid;place-items:center;width:126px;height:126px;margin:0 auto 20px;border-radius:50%;background:var(--cream)}
+.concern-showcase-card .concern-card-icon svg{width:88px;height:88px;stroke-width:1.7}
+.concern-showcase-card>h3{min-height:3.2em;margin:0 0 15px;padding:0;border:0;font-size:1.08rem;line-height:1.55;text-align:center}
+.concern-showcase-card>h3:after{content:"";display:block;width:34px;height:2px;margin:14px auto 0;background:var(--gold)}
+.concern-showcase-card>p{font-size:.84rem;line-height:1.8;text-align:center}
+.concern-closing{display:grid;grid-template-columns:90px minmax(0,1fr);gap:24px;align-items:center;max-width:1040px;margin:34px auto 0;padding:22px 30px;border:1px solid rgba(216,161,29,.65);border-radius:14px;background:rgba(255,255,255,.75);text-align:left;letter-spacing:0}
+.concern-closing:after{display:none}
+.concern-closing-icon{display:grid;place-items:center;border-right:1px solid var(--line)}
+.concern-closing-icon svg{width:58px;height:58px;fill:none;stroke:var(--navy);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.concern-closing-icon svg path:last-child{stroke:var(--gold)}
+.concern-closing p{margin:0;color:var(--navy);font-size:.94rem;font-weight:700;line-height:1.85}
+.concern-closing strong{color:var(--gold);font-size:1.08em}
+@media(max-width:680px){.concern-showcase-card{min-height:235px;padding:0 7px 10px}.concern-issue-label{margin-bottom:-13px}.concern-issue-label b{font-size:1rem}.concern-issue-label b:after{width:20px;margin-top:5px}.concern-showcase-card .concern-card-icon{width:62px;height:62px;margin-bottom:8px}.concern-showcase-card .concern-card-icon svg{width:44px;height:44px}.concern-showcase-card>h3{min-height:4em;margin-bottom:7px;font-size:.68rem}.concern-showcase-card>h3:after{width:22px;height:1px;margin-top:6px}.concern-showcase-card>p{font-size:.59rem;line-height:1.55}.concern-closing{grid-template-columns:48px 1fr;gap:10px;margin-top:22px;padding:12px 10px;border-radius:9px}.concern-closing-icon svg{width:34px;height:34px}.concern-closing p{font-size:.68rem;line-height:1.65}}
+
+/* Desktop-only direction markers between the four flow cards. */
+@media(min-width:981px){.flow-list li:not(:last-child):after{content:"";display:block;position:absolute;z-index:4;top:50%;right:-18px;bottom:auto;left:auto;width:0;height:0;border:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:10px solid var(--navy);background:transparent;transform:translateY(-50%)}}
+
+/* Viewport-triggered motion for the ABOUT IUME content. */
+.js .about-iume .reveal-left{transform:translateX(-42px)}
+.js .about-iume .reveal-left.visible{transform:translateX(0)}
+.about-iume h2.reveal-left{transition-delay:0s}
+.about-iume-lead.reveal-left{transition-delay:.1s}
+.about-iume-copy.reveal-left{transition-delay:.2s}
+.js .about-iume-points li.reveal{transform:translateY(38px)}
+.js .about-iume-points li.reveal.visible{transform:translateY(0)}
+.about-iume-points li:nth-child(1){transition-delay:.08s}
+.about-iume-points li:nth-child(2){transition-delay:.18s}
+.about-iume-points li:nth-child(3){transition-delay:.28s}
+@media(prefers-reduced-motion:reduce){.js .about-iume .reveal-left,.js .about-iume-points li.reveal{opacity:1;transform:none;transition:none}}
+
+/* Concerns follows ABOUT IUME with an alternating, right-led composition. */
+.concerns{padding-top:82px;padding-bottom:82px;background:var(--cream)}
+.concerns:before,.concerns:after{display:none}
+.concerns .section-inner{max-width:1100px}
+.concerns .section-kicker{margin-bottom:22px;text-align:right}
+.concerns .section-kicker:after{margin-right:0;margin-left:auto}
+.concerns h2{max-width:760px;margin:0 0 0 auto;color:var(--navy);font-size:clamp(2.2rem,4.4vw,3.5rem);text-align:right}
+.concerns .heading-line{display:block}
+.concern-showcase{grid-template-columns:repeat(3,minmax(0,1fr));gap:0;max-width:1100px;margin-top:58px}
+.concern-showcase-card{position:relative;display:block;min-height:310px;padding:48px 34px 10px;text-align:left}
+.concern-showcase-card+.concern-showcase-card{border-left:1px solid rgba(10,45,95,.18)}
+.concern-issue-label{position:absolute;z-index:0;top:-12px;left:34px;margin:0}
+.concern-issue-label span{display:none}
+.concern-issue-label b{display:block;width:auto;height:auto;margin:0;color:rgba(216,161,29,.16);background:transparent;font-family:"Noto Serif JP",serif;font-size:5.2rem;font-weight:700;line-height:1}
+.concern-issue-label b:after{display:none}
+.concern-showcase-card .concern-card-icon{position:relative;z-index:1;width:92px;height:92px;margin:0 0 20px;border-radius:50%;background:rgba(255,255,255,.72)}
+.concern-showcase-card .concern-card-icon svg{width:64px;height:64px}
+.concern-showcase-card>h3{position:relative;z-index:1;min-height:0;margin:0 0 10px;padding:0;border:0;color:var(--navy);font-size:1.05rem;line-height:1.6;text-align:left}
+.concern-showcase-card>h3:after{display:none}
+.concern-showcase-card>p{position:relative;z-index:1;margin:0;color:var(--muted);font-size:.83rem;line-height:1.8;text-align:left}
+.concern-closing{max-width:920px;margin:42px 0 0 auto;border:1px solid rgba(216,161,29,.5);background:rgba(255,255,255,.68)}
+@media(max-width:680px){.concerns{padding-top:58px;padding-bottom:58px}.concerns .section-kicker{margin-bottom:16px;text-align:right}.concerns h2{font-size:1.8rem;line-height:1.5}.concern-showcase{grid-template-columns:1fr;margin-top:34px}.concern-showcase-card{display:grid;grid-template-columns:72px minmax(0,1fr);column-gap:16px;min-height:0;padding:30px 4px 24px}.concern-showcase-card+.concern-showcase-card{border-top:1px solid rgba(10,45,95,.16);border-left:0}.concern-issue-label{top:13px;left:3px}.concern-issue-label b{font-size:3.6rem}.concern-showcase-card .concern-card-icon{grid-column:1;grid-row:1/3;width:70px;height:70px;margin:12px 0 0}.concern-showcase-card .concern-card-icon svg{width:48px;height:48px}.concern-showcase-card>h3{grid-column:2;margin-top:10px;font-size:.9rem;text-align:left}.concern-showcase-card>p{grid-column:2;font-size:.76rem;line-height:1.7;text-align:left}.concern-closing{grid-template-columns:44px 1fr;margin-top:26px;padding:13px 11px}.concern-closing p{font-size:.7rem}}
+
+/* Concerns: graph-paper heading and a clipped memo inspired by the reference. */
+.concerns{background-color:var(--white);background-image:linear-gradient(rgba(216,161,29,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(216,161,29,.08) 1px,transparent 1px);background-size:42px 42px}
+.concern-note-layout{position:relative;max-width:980px}
+.concerns-backdrop{position:absolute;z-index:0;top:-78px;left:-72px;color:rgba(10,45,95,.045);font-family:Arial,sans-serif;font-size:clamp(16rem,32vw,27rem);font-weight:800;line-height:1;pointer-events:none;user-select:none}
+.concern-note-heading,.concern-note,.concern-note-layout>.concern-closing{position:relative;z-index:1}
+.concern-note-heading{display:grid;grid-template-columns:minmax(0,1fr) 270px;align-items:end;max-width:940px;margin:0 auto -44px}
+.concern-note-heading>div{align-self:center;padding-bottom:54px}
+.concerns .concern-note-heading .section-kicker{margin-bottom:20px;text-align:left}
+.concerns .concern-note-heading .section-kicker:after{margin-right:auto;margin-left:0}
+.concerns .concern-note-heading h2{margin:0;color:var(--navy);font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.45;text-align:left}
+.concern-title-line{display:block!important;white-space:nowrap}
+.concern-note-heading img{position:relative;z-index:3;width:260px;max-height:300px;margin:0 0 0 auto;object-fit:contain;object-position:center bottom;transform:translateX(-28px)}
+.js .concern-heading-left{transform:translateX(-44px)}
+.js .concern-heading-left.visible{transform:translateX(0)}
+.concern-note-heading h2.concern-heading-left{transition-delay:.12s}
+@media(prefers-reduced-motion:reduce){.js .concern-heading-left{opacity:1;transform:none;transition:none}}
+.concern-note{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:56px 70px 46px;border:1px solid rgba(216,161,29,.24);background:var(--cream);box-shadow:12px 12px 0 rgba(10,45,95,.1);transform:rotate(-1deg)}
+.concern-note-clip{position:absolute;top:-24px;left:90px;width:28px;height:66px;border:4px solid var(--navy);border-radius:16px;opacity:.78}
+.concern-note ul{display:grid;gap:25px;margin:0;padding:0;list-style:none}
+.concern-note li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:16px;align-items:start}
+.concern-note li{align-items:center}
+.concern-note li>span{display:grid;place-items:center;width:28px;height:28px;border-radius:4px;background:var(--navy);color:var(--white);font-weight:700}
+.concern-note strong{display:block;color:var(--navy);font-size:1.02rem;line-height:1.6}
+.concern-note p{margin:3px 0 0;color:var(--muted);font-size:.84rem;line-height:1.7}
+.concern-note-layout .concern-closing{position:relative;z-index:3;margin-top:36px;background:rgba(255,255,255,.9)}
+.js .concern-note.reveal{transform:translateY(18px) rotate(-1deg)}
+.js .concern-note.reveal.visible{transform:rotate(-1deg)}
+@media(max-width:680px){.concerns{background-size:28px 28px}.concerns-backdrop{top:-20px;left:-18px;font-size:13rem}.concern-note-heading{grid-template-columns:minmax(0,1fr) 88px;margin-bottom:-18px}.concern-note-heading>div{padding-bottom:26px}.concerns .concern-note-heading .section-kicker{margin-bottom:12px;font-size:.82rem;text-align:left}.concerns .concern-note-heading h2{font-size:clamp(1.05rem,4.7vw,1.2rem);line-height:1.55}.concern-note-heading img{width:100px;max-height:150px;transform:translateX(-14px)}.concern-note{width:94%;padding:34px 22px 28px;box-shadow:7px 7px 0 rgba(10,45,95,.1)}.concern-note-clip{top:-17px;left:34px;width:20px;height:48px;border-width:3px}.concern-note ul{gap:18px}.concern-note li{grid-template-columns:25px 1fr;gap:10px}.concern-note li>span{width:23px;height:23px;font-size:.75rem}.concern-note strong{font-size:.83rem}.concern-note p{font-size:.7rem;line-height:1.6}.concern-note-layout .concern-closing{margin-top:28px}}
+
+/* Align the ABOUT IUME label with its main heading. */
+.section.about-iume .section-kicker{margin-left:84px;text-align:left}
+.section.about-iume .section-kicker:after{margin-right:auto;margin-left:0}
+@media(max-width:760px){.section.about-iume .section-kicker{margin-left:22px}}
+
+/* Keep every section label on the same left-aligned axis. */
+.section .section-kicker{text-align:left!important}
+.section .section-kicker:after{margin-right:auto!important;margin-left:0!important}
+
+/* Present the concerns summary as plain copy, not as a card. */
+.concern-note-layout .concern-closing{display:block;max-width:820px;margin:34px auto 0;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:var(--navy);font-size:1rem;font-weight:700;line-height:1.9;text-align:center;letter-spacing:.02em}
+.concern-note-layout .concern-closing:after{display:none}
+@media(max-width:680px){.concern-note-layout .concern-closing{margin-top:26px;padding:0 8px;font-size:.78rem;line-height:1.8;text-align:left}}
+@media(min-width:981px){.concern-note-layout .concern-closing{max-width:100%;font-size:.95rem;white-space:nowrap}}
+
+/* Large white FEATURE lettering behind the reasons section. */
+.strengths{overflow:hidden;background:#f1f3f6}
+.strengths>.section-inner{position:relative}
+.strengths-backdrop{position:absolute;z-index:0;top:-112px;right:0;left:auto;width:290px;height:338px;color:rgba(255,255,255,.94);pointer-events:none;user-select:none}
+.strengths-backdrop svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:14;stroke-linecap:butt;stroke-linejoin:miter}
+.strengths-backdrop .bulb-outline{stroke-linecap:round;stroke-linejoin:round}
+.strengths-backdrop .bulb-rays{stroke-width:12;stroke-linecap:round;stroke-linejoin:round}
+.strengths .section-kicker,.strengths .strengths-heading,.strengths .reason-showcase-grid{position:relative;z-index:1}
+@media(max-width:680px){.strengths-backdrop{top:-35px;right:-5px;left:auto;width:132px;height:155px}.strengths-backdrop svg{stroke-width:15}.strengths-backdrop .bulb-rays{stroke-width:13}}
+
+/* Align this label with the concerns section heading axis. */
+@media(min-width:681px){.strengths>.section-inner>.section-kicker{margin-left:110px}}
+
+/* Use one shared left axis for section labels across differently sized containers. */
+@media(min-width:681px){
+  .strengths>.section-inner>.section-kicker,
+  .tutors>.section-inner>.section-kicker,
+  .pricing>.section-inner>.section-kicker,
+  .flow>.section-inner>.section-kicker,
+  .faq>.section-inner>.section-kicker{width:100%;max-width:940px;margin-right:auto;margin-left:auto}
+  .flexibility .split-heading .section-kicker{margin-left:110px}
+}
+
+.strengths>.section-inner>.strengths-heading{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
+.js .strengths-heading-left{transform:translateX(-44px)}
+.js .strengths-heading-left.visible{transform:translateX(0)}
+.strengths h2.strengths-heading-left{transition-delay:.12s}
+@media(prefers-reduced-motion:reduce){.js .strengths-heading-left{opacity:1;transform:none;transition:none}}
+.strengths-story{position:relative;z-index:1;width:100%;max-width:940px;margin:30px auto 52px;color:var(--muted);font-size:.94rem;line-height:2;text-align:left}
+.strengths-story p{margin:0 0 22px}
+.strengths-story-quote{padding:16px 22px;border-left:3px solid var(--gold);color:var(--navy);font-family:"Noto Serif JP",serif;font-size:1.08rem;font-weight:700}
+.strengths-story-closing{margin-bottom:0!important;color:var(--navy);font-weight:700}
+@media(max-width:680px){.strengths-story{margin-top:24px;margin-bottom:38px;font-size:.82rem;line-height:1.9}.strengths-story p{margin-bottom:18px}.strengths-story-quote{padding:12px 15px;font-size:.92rem}}
+
+/* Compact reason cards with copy-led, left-aligned content. */
+.reason-showcase-card{position:relative;min-height:470px;padding:32px 28px 20px;overflow:hidden}
+.reason-showcase-number{font-size:1.65rem}
+.reason-showcase-card h3{color:var(--navy)}
+.reason-keyword{position:relative;z-index:0;display:inline-block;white-space:nowrap}
+.reason-keyword:after{content:"";position:absolute;z-index:-1;right:-1px;bottom:1px;left:-1px;height:7px;border-radius:7px;background:rgba(244,216,137,.75)}
+.reason-showcase-card p{min-height:0;text-align:left}
+.reason-showcase-visual{height:120px;margin-top:18px}
+.reason-showcase-visual img{width:108px;height:108px}
+.reason-showcase-visual{display:block;position:absolute;z-index:0;right:14px;bottom:16px;width:150px;height:150px;margin:0;color:var(--navy);opacity:.055;pointer-events:none}
+.reason-showcase-visual svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.reason-handshake-visual svg{stroke-width:6.5}
+.reason-showcase-card>.reason-showcase-number,.reason-showcase-card>h3,.reason-showcase-card>p,.reason-showcase-card>.reason-showcase-arrow{position:relative;z-index:1}
+.reason-showcase-card{min-height:360px}
+.reason-showcase-arrow{margin-top:6px}
+@media(max-width:980px) and (min-width:681px){.reason-showcase-card{min-height:450px}}
+@media(max-width:680px){
+  .reason-showcase-card,.reason-showcase-card:nth-child(4){grid-template-columns:50px minmax(0,1fr);grid-template-rows:auto auto auto auto;padding:14px 16px}
+  .reason-showcase-card p{grid-column:2;grid-row:2;text-align:left}
+  .reason-showcase-number{font-size:1.15rem}
+  .reason-showcase-visual{right:8px;bottom:6px;width:86px;height:86px;margin:0}
+  .reason-showcase-arrow{grid-column:2;grid-row:4;margin-top:6px}
+}
+
+/* Shared left-to-right entrance for every section label and heading. */
+.js .section-heading-reveal{transform:translateX(-44px)}
+.js .section-heading-reveal.visible{transform:translateX(0)}
+.section h2.section-heading-reveal{transition-delay:.1s}
+@media(prefers-reduced-motion:reduce){.js .section-heading-reveal{opacity:1;transform:none;transition:none}}
+
+/* One clear plan: subject teaching and learning-strategy support together. */
+.pricing .single-plan-grid{grid-template-columns:minmax(0,680px);justify-content:center}
+.pricing .single-plan-grid .price-card{min-height:0;padding:36px 42px}
+.pricing .single-plan-grid .price-card h3{min-height:0;font-size:1.3rem}
+@media(max-width:680px){.pricing .single-plan-grid{display:block;overflow:visible}.pricing .single-plan-grid .price-card{width:100%;padding:28px 22px}}
+
+/* Flow heading alignment and quiet check-mark backdrop. */
+.flow{overflow:hidden;background:#f1f3f6}
+.flow>.section-inner{position:relative}
+.flow>.section-inner>h2{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
+.flow-backdrop{position:absolute;z-index:0;top:-92px;right:-8px;width:280px;height:280px;color:rgba(255,255,255,.62);pointer-events:none;user-select:none}
+.flow-backdrop svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}
+.flow>.section-inner>.section-kicker,.flow>.section-inner>h2,.flow .flow-list{position:relative;z-index:1}
+@media(max-width:680px){.flow-backdrop{top:-34px;right:-18px;width:132px;height:132px}.flow-backdrop svg{stroke-width:13}}
+
+/* FAQ heading alignment and oversized background lettering. */
+.faq{overflow:hidden}
+.faq>.section-inner{position:relative}
+.faq>.section-inner>h2{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
+.faq-backdrop{position:absolute;z-index:0;top:-68px;right:-5px;color:rgba(10,45,95,.045);font-family:Arial,sans-serif;font-size:12rem;font-weight:900;line-height:1;letter-spacing:-.05em;pointer-events:none;user-select:none}
+.faq>.section-inner>.section-kicker,.faq>.section-inner>h2,.faq .faq-list{position:relative;z-index:1}
+@media(max-width:680px){.faq-backdrop{top:-22px;right:-12px;font-size:6rem}}
+
+/* Graduation-cap backdrop for the tutor introduction. */
+.tutors{overflow:hidden}
+.tutors>.section-inner{position:relative}
+.tutors-backdrop{position:absolute;z-index:0;top:-42px;right:auto;left:-78px;color:rgba(10,45,95,.045);font-family:Arial,sans-serif;font-size:clamp(8rem,17vw,14rem);font-weight:900;line-height:.9;letter-spacing:-.055em;white-space:nowrap;pointer-events:none;user-select:none}
+.tutors>.section-inner>.section-kicker,.tutors>.section-inner>h2,.tutors .tutor-section-lead,.tutors .tutor-grid,.tutors .privacy-note{position:relative;z-index:1}
+@media(max-width:680px){.tutors-backdrop{top:-5px;right:auto;left:-18px;font-size:6.2rem}}
+.tutors{padding-bottom:72px}
+.flow{padding-top:72px}
+@media(max-width:680px){.tutors{padding-bottom:48px}.flow{padding-top:48px}}
+
+/* Oversized PRICE lettering behind the pricing introduction. */
+.strengths{position:relative;z-index:2;padding-bottom:72px}
+.pricing{position:relative;z-index:1;padding-top:64px;overflow:visible;background-color:var(--white);background-image:radial-gradient(circle,rgba(10,45,95,.065) 1px,transparent 1.2px);background-size:14px 14px}
+.pricing>.section-inner{position:relative}
+.pricing-backdrop{position:absolute;z-index:0;top:-110px;right:-8px;left:auto;color:rgba(10,45,95,.045);font-family:Arial,sans-serif;font-size:12rem;font-weight:900;line-height:1;letter-spacing:-.05em;white-space:nowrap;pointer-events:none;user-select:none}
+.pricing>.section-inner>.section-kicker,.pricing>.section-inner>h2,.pricing>.section-inner>.section-lead,.pricing .zero-fees,.pricing .price-grid,.pricing .contract-note,.pricing .rematch-box{position:relative;z-index:1}
+@media(max-width:680px){.strengths{padding-bottom:48px}.pricing{padding-top:46px}.pricing-backdrop{top:-65px;right:-12px;left:auto;font-size:6rem}}
+
+/* Align the tutor introduction with its section heading. */
+.tutors>.section-inner>h2,.tutors .tutor-section-lead{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
+.tutors .tutor-section-lead{margin-bottom:50px}
+.pricing>.section-inner>h2{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
+.pricing>.section-inner>.section-lead{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
+.pricing-intro p{margin:0 0 14px}
+.pricing-intro p:last-child{margin-bottom:0}

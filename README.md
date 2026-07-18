@@ -12,7 +12,7 @@ npm run dev
 
 ## 講師プロフィールの更新
 
-`data/tutors.json` を編集します。空文字 `""` の項目は、サイト上で「情報更新予定」と表示されます。
+`data/tutors.json` を講師情報の管理用データとして編集し、公開時は同じ内容を `index.html` の講師カードにも反映します。講師カードをHTMLへ直接記載しているため、JavaScriptが無効な環境でもプロフィールが表示されます。
 
 ```json
 {
@@ -26,4 +26,3 @@ npm run dev
   "introduction": "紹介文"
 }
 ```
-
