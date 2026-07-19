@@ -710,3 +710,15 @@
 .pricing>.section-inner>.section-lead{width:100%;max-width:940px;margin-right:auto;margin-left:auto;text-align:left}
 .pricing-intro p{margin:0 0 14px}
 .pricing-intro p:last-child{margin-bottom:0}
+
+/* Keep all four reason cards equally compact on phones. */
+@media(max-width:680px){
+  .strengths .reason-showcase-card,.strengths .reason-showcase-card:nth-child(4){display:block!important;height:auto!important;min-height:0!important;padding:10px 14px 12px!important;text-align:left}
+  .reason-showcase-card .reason-showcase-number{display:block;margin:0 0 4px;font-size:1rem;text-align:left}
+  .reason-showcase-card h3{position:relative;left:auto;width:auto;min-height:0;margin:0 0 4px;padding:0;font-size:.9rem;line-height:1.35;text-align:left}
+  .reason-showcase-card p{position:relative;z-index:1;grid-column:auto;grid-row:auto;margin:0;padding:0;font-size:.68rem;line-height:1.48;text-align:left}
+  .reason-showcase-card:nth-child(2) h3{font-size:clamp(.82rem,3.8vw,1rem);white-space:nowrap}
+  .strengths .reason-showcase-card .reason-showcase-visual{display:block!important;position:absolute!important;z-index:0;inset:34px 4px auto auto!important;width:90px!important;height:90px!important;margin:0!important;opacity:.055}
+  .reason-showcase-card .reason-showcase-arrow{position:relative;right:auto;bottom:auto;left:auto;width:28px;margin:7px 0 0}
+}
+@media(max-width:360px){.strengths .reason-showcase-card,.strengths .reason-showcase-card:nth-child(4){height:auto!important;min-height:0!important}.reason-showcase-card p{font-size:.66rem}}
