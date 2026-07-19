@@ -727,9 +727,9 @@
 @media(max-width:680px){
   .hero-inner{grid-template-columns:minmax(0,70%) minmax(0,30%)}
   .hero h1{align-self:start;max-width:100%;padding-right:4px;font-size:clamp(1.45rem,6.1vw,1.65rem);line-height:1.42;text-align:left}
-  .hero-photo-wrap{align-self:end;justify-self:end;width:185%;margin:0 -34% -12px 0;transform:translateY(40px)}
+  .hero-photo-wrap{align-self:end;justify-self:end;width:185%;margin:0 -34% -12px 0;transform:translateY(72px)}
   .hero-photo-wrap .hero-education-image{object-position:right bottom}
-  .hero-lead{margin-top:76px}
+  .hero-lead{margin-top:112px}
 }
 
 /* Improve body-copy readability across the desktop layout. */
