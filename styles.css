@@ -764,7 +764,7 @@
 .comparison-table th,.comparison-table td{padding:19px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.84rem;line-height:1.65;text-align:center;vertical-align:middle}
 .comparison-table tr>*:last-child{border-right:0}.comparison-table tbody tr:last-child>*{border-bottom:0}
 .comparison-table thead th{background:#f7f9fc;font-weight:700}.comparison-table thead th:first-child{width:18%}
-.comparison-table tbody th{background:#fbfcfe;font-weight:700;text-align:left}
+.comparison-table tbody th{background:#fbfcfe;font-weight:700;text-align:center}
 .comparison-table .iume-column{background:var(--cream)}
 .comparison-table thead .iume-column{position:relative;color:var(--navy);font-size:1rem}
 .comparison-table thead .iume-column span{display:block;width:max-content;margin:0 auto 5px;padding:2px 9px;border-radius:999px;background:var(--gold);color:var(--white);font-size:.62rem;line-height:1.5;letter-spacing:.04em}
