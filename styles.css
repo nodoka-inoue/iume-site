@@ -752,3 +752,32 @@
   .section .plan-recommendation{font-size:.9rem!important}
   .section details p{font-size:1rem}
 }
+
+/* Pricing comparison */
+.comparison-block{margin:58px 0 64px}
+.comparison-heading{max-width:760px;margin-bottom:28px}
+.comparison-label{margin:0 0 5px;color:var(--gold);font-size:.72rem!important;font-weight:800;letter-spacing:.16em}
+.comparison-heading h3{margin:0 0 8px;font-family:"Noto Serif JP",serif;font-size:1.65rem}
+.comparison-heading>p:last-child{margin:0;color:var(--muted);font-size:.9rem}
+.comparison-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:var(--white);box-shadow:0 12px 34px rgba(6,27,58,.06);-webkit-overflow-scrolling:touch}
+.comparison-table{width:100%;min-width:760px;border-collapse:separate;border-spacing:0;table-layout:fixed;color:var(--deep)}
+.comparison-table th,.comparison-table td{padding:19px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:.84rem;line-height:1.65;text-align:center;vertical-align:middle}
+.comparison-table tr>*:last-child{border-right:0}.comparison-table tbody tr:last-child>*{border-bottom:0}
+.comparison-table thead th{background:#f7f9fc;font-weight:700}.comparison-table thead th:first-child{width:18%}
+.comparison-table tbody th{background:#fbfcfe;font-weight:700;text-align:left}
+.comparison-table .iume-column{background:var(--cream)}
+.comparison-table thead .iume-column{position:relative;color:var(--navy);font-size:1rem}
+.comparison-table thead .iume-column span{display:block;width:max-content;margin:0 auto 5px;padding:2px 9px;border-radius:999px;background:var(--gold);color:var(--white);font-size:.62rem;line-height:1.5;letter-spacing:.04em}
+.comparison-table .iume-column strong{color:var(--gold);font-size:.95rem}
+.comparison-note{margin:12px 4px 0;color:#778397;font-size:.72rem!important;line-height:1.7}
+.comparison-swipe-hint{display:none}
+@media(max-width:680px){
+  .comparison-block{margin:42px 0 48px}
+  .comparison-heading{margin-bottom:14px}
+  .comparison-heading h3{font-size:1.35rem}
+  .comparison-heading>p:last-child{font-size:.82rem}
+  .comparison-swipe-hint{display:block;margin:0 0 8px;color:var(--muted);font-size:.68rem!important;text-align:right}
+  .comparison-table-wrap{border-radius:15px;overscroll-behavior-inline:contain}
+  .comparison-table{min-width:700px}
+  .comparison-table th,.comparison-table td{padding:15px 13px;font-size:.78rem}
+}
